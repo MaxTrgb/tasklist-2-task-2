@@ -38,6 +38,9 @@
             button2 = new Button();
             button3 = new Button();
             button4 = new Button();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown3).BeginInit();
@@ -45,7 +48,7 @@
             // 
             // progressBar1
             // 
-            progressBar1.Location = new Point(218, 57);
+            progressBar1.Location = new Point(302, 57);
             progressBar1.Name = "progressBar1";
             progressBar1.Size = new Size(364, 32);
             progressBar1.TabIndex = 0;
@@ -53,7 +56,7 @@
             // progressBar2
             // 
             progressBar2.ForeColor = Color.Green;
-            progressBar2.Location = new Point(218, 143);
+            progressBar2.Location = new Point(302, 143);
             progressBar2.Name = "progressBar2";
             progressBar2.Size = new Size(364, 32);
             progressBar2.TabIndex = 1;
@@ -61,7 +64,7 @@
             // progressBar3
             // 
             progressBar3.ForeColor = SystemColors.ControlDarkDark;
-            progressBar3.Location = new Point(218, 229);
+            progressBar3.Location = new Point(302, 229);
             progressBar3.Name = "progressBar3";
             progressBar3.Size = new Size(364, 32);
             progressBar3.TabIndex = 2;
@@ -78,21 +81,21 @@
             // 
             // numericUpDown1
             // 
-            numericUpDown1.Location = new Point(147, 60);
+            numericUpDown1.Location = new Point(231, 60);
             numericUpDown1.Name = "numericUpDown1";
             numericUpDown1.Size = new Size(46, 23);
             numericUpDown1.TabIndex = 4;
             // 
             // numericUpDown2
             // 
-            numericUpDown2.Location = new Point(147, 232);
+            numericUpDown2.Location = new Point(231, 232);
             numericUpDown2.Name = "numericUpDown2";
             numericUpDown2.Size = new Size(46, 23);
             numericUpDown2.TabIndex = 5;
             // 
             // numericUpDown3
             // 
-            numericUpDown3.Location = new Point(147, 146);
+            numericUpDown3.Location = new Point(231, 146);
             numericUpDown3.Name = "numericUpDown3";
             numericUpDown3.Size = new Size(46, 23);
             numericUpDown3.TabIndex = 6;
@@ -105,6 +108,7 @@
             button2.TabIndex = 7;
             button2.Text = "■";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -114,6 +118,7 @@
             button3.TabIndex = 8;
             button3.Text = "❚❚";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -123,12 +128,43 @@
             button4.TabIndex = 9;
             button4.Text = "▶";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(135, 62);
+            label1.Name = "label1";
+            label1.Size = new Size(90, 15);
+            label1.TabIndex = 10;
+            label1.Text = "Thread 1 Speed:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(135, 148);
+            label2.Name = "label2";
+            label2.Size = new Size(90, 15);
+            label2.TabIndex = 11;
+            label2.Text = "Thread 2 Speed:";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(135, 232);
+            label3.Name = "label3";
+            label3.Size = new Size(90, 15);
+            label3.TabIndex = 12;
+            label3.Text = "Thread 3 Speed:";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
@@ -145,6 +181,7 @@
             ((System.ComponentModel.ISupportInitialize)numericUpDown2).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown3).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -159,5 +196,8 @@
         private Button button2;
         private Button button3;
         private Button button4;
+        private Label label1;
+        private Label label2;
+        private Label label3;
     }
 }
