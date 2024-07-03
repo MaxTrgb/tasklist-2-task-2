@@ -102,9 +102,9 @@
             // 
             // button2
             // 
-            button2.Location = new Point(330, 297);
+            button2.Location = new Point(335, 309);
             button2.Name = "button2";
-            button2.Size = new Size(43, 33);
+            button2.Size = new Size(33, 33);
             button2.TabIndex = 7;
             button2.Text = "■";
             button2.UseVisualStyleBackColor = true;
@@ -112,9 +112,9 @@
             // 
             // button3
             // 
-            button3.Location = new Point(379, 297);
+            button3.Location = new Point(384, 309);
             button3.Name = "button3";
-            button3.Size = new Size(43, 33);
+            button3.Size = new Size(33, 33);
             button3.TabIndex = 8;
             button3.Text = "❚❚";
             button3.UseVisualStyleBackColor = true;
@@ -122,9 +122,9 @@
             // 
             // button4
             // 
-            button4.Location = new Point(428, 297);
+            button4.Location = new Point(433, 309);
             button4.Name = "button4";
-            button4.Size = new Size(43, 33);
+            button4.Size = new Size(33, 33);
             button4.TabIndex = 9;
             button4.Text = "▶";
             button4.UseVisualStyleBackColor = true;

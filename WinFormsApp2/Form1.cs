@@ -144,11 +144,11 @@ namespace WinFormsApp2
         }
         private void hideNumeric()
         {
+
             numericUpDown1.Hide();
             numericUpDown2.Hide();
             numericUpDown3.Hide();
         }
-
-
     }
+
 }
