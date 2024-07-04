@@ -1,4 +1,4 @@
-Task 2 and 3
+Task 2 and Task 3
 
 Task 2:
 Create a windowed application for copying large files.
